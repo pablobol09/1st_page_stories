@@ -19,7 +19,7 @@
 </head>
 <body>
         
-<div class="mainpic">
+<div class="aboutpic">
     <br>
     <br>
     <img id= "simple-menu" src="https://www.dropbox.com/pri/get/mywebpage/menu.gif?raw=1&_subject_uid=61905955&w=AACPEGUb7H4MWHWMGQTKgxuifzj8mzUfoVgouASAWoKcYA&size=2048x1536&size_mode=3">
@@ -27,47 +27,42 @@
 
 <div id="sidr">
       <ul>
-          <li><a href="#">Home</a> <img alt="close" class="icon-close" src = " <%= image_url('close-white.svg') %> " width="24px"></li>
-          <li><%= link_to 'About', "pages/about"%></li>
+          <li><%= link_to 'Home', "/"%> <img alt="close" class="icon-close" src = " <%= image_url('close-white.svg') %> " width="24px"></li>
+          <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-      </ul>          
+      </ul>
+          
 </div>
     <br>
     <br>
     <br>
     <br>
-    <h1 class="heading"> Create and Share Stories </h1>
+    <h1 class="aboutheading"> Relive your favorite memories </h1>
   
-    <div class="btn">
-       <p> <%= link_to 'Learn More', "pages/about", :style=>'color: white;'%> </p>
-    </div>
+    
 
 </div>
 
 <br>
 <br>
 	
-  <div class="supportingsec">
-    <h2 class="subhline"> Relive and share your adventures </h2>
-    <h4 class="subtline"> Stories automatically creates a digital journal filled with only your best photos. </h4>
-  </div>
+  <div class="aboutsupportingsec">
+    <h2 class="aboutsubhline"> No more sorting through photos </h2>
+    <h4 class="aboutsubtline"> Stories automatically finds your best photos and creates a new travelogue. This way you can capture and share your special moments in fresh new ways.</h4>
+    <br>
+    <br>
+    <br>
 
-
-  <div class="secondarysec">
-    
-  </div>
-
-
-  <div class="discoversec">
-    <h2 class="subhlinedis"> Discover Stories</h2>
-    <div class="btnbot">
-       <p> <%= link_to 'Learn More', "pages/about", :style=>'color: white;'%> </p>
+    <div class="aboutbtnbot">
+       <p> Sign Up </p>
     </div>
+    <br>
+    <br>
+    <br>
   </div>
 
-  <div class="footer">
 
-  </div>
+  
 </body>
 
 </html>
