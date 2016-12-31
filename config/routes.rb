@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
     root 'pages#home'
     get 'pages/about' => 'pages#about'
+    get 'pages/thanks' => 'pages#thanks', as: :thanks
+    resources :signups
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

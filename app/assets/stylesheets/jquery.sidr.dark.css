@@ -7,14 +7,14 @@
   width: 260px;
   overflow-x: hidden;
   overflow-y: auto;
-  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-family: 'Roboto', tahoma, verdana, arial, sans-serif;
   font-size: 15px;
   background: #333;
   color: #fff;
   box-shadow: 0 0 5px 5px #222 inset;
 }
 .sidr .sidr-inner {
-  padding: 0 0 15px;
+  padding: 30px 40px;
 }
 .sidr .sidr-inner > p {
   margin-left: 15px;
@@ -63,15 +63,13 @@
   display: block;
   margin: 0 0 15px;
   padding: 0;
-  border-top: 1px solid #1a1a1a;
-  border-bottom: 1px solid #4d4d4d;
+  
 }
 .sidr ul li {
   display: block;
   margin: 0;
   line-height: 48px;
-  border-top: 1px solid #4d4d4d;
-  border-bottom: 1px solid #1a1a1a;
+  
 }
 .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
   border-top: 0;
@@ -85,7 +83,9 @@
 }
 .sidr ul li a,
 .sidr ul li span {
-  padding: 0 15px;
+  padding: 30px 40px;
+  font-size: 18px;
+  font-weight: 100;
   display: block;
   text-decoration: none;
   color: #fff;

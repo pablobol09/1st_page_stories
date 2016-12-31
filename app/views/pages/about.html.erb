@@ -22,14 +22,14 @@
 <div class="aboutpic">
     <br>
     <br>
-    <img id= "simple-menu" src="https://www.dropbox.com/pri/get/mywebpage/menu.gif?raw=1&_subject_uid=61905955&w=AACPEGUb7H4MWHWMGQTKgxuifzj8mzUfoVgouASAWoKcYA&size=2048x1536&size_mode=3">
+    <img id= "simple-menu" src="https://photos-4.dropbox.com/t/2/AABH_kDcdQqtYgc1DV_htNMMF-bkvB_9GrpoEV1VYx0FhA/12/61905955/png/32x32/1/_/1/2/rsz_1rsz_imagelayer.png/EJTjv4EFGEAgBygH/4_nTVG345myivTIkGy0-biXYeTVIFDtN62Uz7o-z3A0?size=2048x1536&size_mode=3">
 
 
 <div id="sidr">
       <ul>
           <li><%= link_to 'Home', "/"%> <img alt="close" class="icon-close" src = " <%= image_url('close-white.svg') %> " width="24px"></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><%= link_to 'Contact', controller: 'signups', action: 'new' %></li>
       </ul>
           
 </div>
@@ -54,7 +54,7 @@
     <br>
 
     <div class="aboutbtnbot">
-       <p> Sign Up </p>
+       <p> <%= link_to 'Sign Up', controller: 'signups', action: 'new' %> </p>
     </div>
     <br>
     <br>

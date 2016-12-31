@@ -19,7 +19,7 @@
 </head>
 <body>
         
-<div class="mainpic">
+<div class="contactpagepic">
     <br>
     <br>
     <img id= "simple-menu" src="https://photos-4.dropbox.com/t/2/AABH_kDcdQqtYgc1DV_htNMMF-bkvB_9GrpoEV1VYx0FhA/12/61905955/png/32x32/1/_/1/2/rsz_1rsz_imagelayer.png/EJTjv4EFGEAgBygH/4_nTVG345myivTIkGy0-biXYeTVIFDtN62Uz7o-z3A0?size=2048x1536&size_mode=3">
@@ -27,49 +27,37 @@
 
 <div id="sidr">
       <ul>
-          <li><a href="#">Home</a><img alt="close" class="icon-close" src = " <%= image_url('close-white.svg') %> " width="24px"></li>
-          <li><%= link_to 'About', "pages/about"%></li>
-          <li><%= link_to 'Contact', "signups/new"%></li>
+          <li><%= link_to 'Home', "/"%>  <img alt="close" class="icon-close" src = " <%= image_url('close-white.svg') %> " width="24px"></li>
+          <li><%= link_to 'About', controller: 'pages', action: 'about' %></li>
+          <li><a href="#">Contact</a></li>
       </ul>          
 </div>
     <br>
     <br>
     <br>
     <br>
-    <h1 class="heading"> Create and Share Stories </h1>
-  
-    <div class="btn">
-       <p> <%= link_to 'Learn More', "pages/about", :style=>'color: white;'%> </p>
-    </div>
+    <h1 class="contactheading"> Get the latest update from Stories </h1>
+
+<div class="wtf">
+    <%= form_for :signup, url: signups_path do |f| %>
+  <p>
+    <%= f.label :first_name, class: "labels" %><br>
+    <%= f.text_field :firstname, class: "field" %>
+  </p>
+ 
+  <p>
+    <%= f.label :email, class: "labels" %><br>
+    <%= f.text_field :email, class: "field" %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Join", class: "joinbtn"%>
+  </p>
+<% end %>
+</div>
 
 </div>
 
-<br>
-<br>
-<br>
-<br>	
-  <div class="supportingsec">
-    <h2 class="subhline"> Relive and share your adventures </h2>
-    <p class="subtline"> Stories automatically creates a digital journal filled with only your best photos. </p>
-  </div>
- <br>
- <br>
-
-  <div class="secondarysec">
-    
-  </div>
-
-
-  <div class="discoversec">
-    <h2 class="subhlinedis"> Discover Stories</h2>
-    <div class="btnbot">
-       <p> <%= link_to 'Learn More', "pages/about", :style=>'color: white;'%> </p>
-    </div>
-  </div>
-
-  <div class="footer">
-
-  </div>
 </body>
 
 </html>
